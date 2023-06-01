@@ -21,4 +21,6 @@
     <color name="main_account">#446388</color>
     <color name="tabLayout">#F5F7FA</color>
     <color name="tabSelected">#FBE7D0</color>
+
+    <color name="yellow">#FFEB3B</color>
 </resources>

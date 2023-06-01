@@ -4,16 +4,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <!--com.legion.eduapp.presentation.fragments.ChartFinanceFragment-->
-    <!-- TODO: Update blank fragment layout -->
-    <!--    <TextView-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="match_parent"-->
-    <!--        android:text="@string/hello_blank_fragment" />-->
+
+<!--    <com.github.mikephil.charting.charts.BarChart-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:id="@+id/barChart"-->
+<!--        android:layout_height="match_parent"/>-->
 
     <com.github.mikephil.charting.charts.BarChart
         android:layout_width="match_parent"
-        android:id="@+id/barChart"
-        android:layout_height="match_parent"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/bar_chart"
+        android:layout_marginBottom="8dp"/>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/pie_chart"
+        android:layout_marginTop="8dp"/>
 
 </LinearLayout>

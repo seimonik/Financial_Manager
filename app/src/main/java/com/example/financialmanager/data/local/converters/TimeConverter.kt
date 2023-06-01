@@ -13,7 +13,7 @@ class TimeConverter {
     }
 
     @TypeConverter
-    fun dateToTimestamp(date: Date?): Long? {
-        return date?.time
+    fun dateToTimestamp(date: Date): Long {
+        return date.getTime()
     }
 }

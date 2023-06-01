@@ -27,4 +27,7 @@ interface TransactionDao {
 
     @Delete
     suspend fun deleteTransaction(transaction: TransactionEntity)
+
+    @Query("SELECT * FROM TransactionEntity")
+    suspend fun getAllTransactionsNotFlow(): List<TransactionEntity>
 }
