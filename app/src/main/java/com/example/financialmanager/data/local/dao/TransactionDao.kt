@@ -10,7 +10,7 @@ import com.example.financialmanager.data.local.entity.TransactionEntity
 import com.example.financialmanager.domain.enums.TransactionType
 import kotlinx.coroutines.flow.Flow
 
-@Dao
+@Dao // интерфейс, который будет заниматься манипулированием данными базы данных
 interface TransactionDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

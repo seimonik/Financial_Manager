@@ -20,7 +20,6 @@ import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
 import com.example.financialmanager.R
-import com.example.financialmanager.data.local.converters.TimeConverter
 import java.io.File
 import java.util.*
 import com.example.financialmanager.databinding.FragmentCreateTransactionBinding
@@ -82,7 +81,6 @@ class CreateTransactionFragment : Fragment() {
                     val title = binding.etTitle.text.toString()
                     val amount = parseDouble(binding.etAmount.text.toString())
                     val transactionType = binding.etTransactionType.text.toString()
-                    val timeConverter = TimeConverter()
                     val date = binding.etWhen.text.toString()
 
                     when {

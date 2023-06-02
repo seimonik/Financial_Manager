@@ -5,7 +5,7 @@ import androidx.room.*
 import com.example.financialmanager.data.local.dao.TransactionDao
 import com.example.financialmanager.data.local.entity.TransactionEntity
 
-
+// объявление базы данных
 @Database(
     entities = [
         TransactionEntity::class
@@ -26,6 +26,7 @@ abstract class FinanceManagerDatabase : RoomDatabase() {
             instance ?: buildDatabase(context).also { instance = it }
         }
 
+        // создание базы данных
         private fun buildDatabase(context: Context) = Room.databaseBuilder(
             context,
             FinanceManagerDatabase::class.java,
